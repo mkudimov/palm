@@ -1,0 +1,5 @@
+create role d4l with login password 'd4l';
+create database "d4l" owner=d4l encoding='utf-8';
+
+-- inside d4l database
+create table tokens (token varchar not null unique);
